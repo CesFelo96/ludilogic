@@ -1,0 +1,28 @@
+body {
+      background: url('/img/fondo.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+  width: 18rem;
+  margin: 100px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.navbar {
+  background-color: #29C4B9;
+  color: white;
+  display: flex; /* los elementos quedan pegados uno del otro horizontalmente */
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
