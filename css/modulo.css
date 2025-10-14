@@ -6,23 +6,54 @@ body {
 
 .card {
   width: 18rem;
-  margin: 100px auto;
+  margin: 50px 20px; 
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
+.card-link {
+  display: inline-block; /* fuerza separación */
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s ease;
+}
+
+
+.card-link {
+  display: inline-block; /* fuerza separación */
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
 .navbar {
-  background-color: #29C4B9;
-  color: white;
-  display: flex; /* los elementos quedan pegados uno del otro horizontalmente */
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
+    background-color: #8ECDF3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    justify-content: flex-end;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.navbar .btn-info {
+  background-color: white;
+  color: #29C4B9;
+  font-weight: bold;
+  border: none;
+}
+
+.navbar .btn-info:hover {
+  background-color: #1fa79e;
+  color: white;
 }
