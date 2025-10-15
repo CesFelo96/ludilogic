@@ -70,26 +70,42 @@ body {
 
 /* Zona de actividad (área clicable) */
 .zona-actividad {
-  height: 350px;
-  background-color: #d9d9d9;
+  height: 450px;
+  background: #0096D8;
+  border: #333 10px solid;
   margin: 15px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /*
   cursor: pointer;
   transition: background 0.3s;
+  */
 }
 
+ /*
 .zona-actividad:hover {
   background-color: #c7c7c7;
 }
+*/
 
-.icono-play {
+.juego > div {
+  background-color: #eee;
+  background-image: url(/img/logo_figura.png);
+  background-size: cover;
+  border: #000 1px solid;
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin: 10px;
+  padding: 20px;
   font-size: 60px;
-  color: black;
-  margin-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align: center;
 }
 
 .zona-actividad p {
