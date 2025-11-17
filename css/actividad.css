@@ -34,6 +34,10 @@ body {
   margin: 0;
 }
 
+/*Vista actividad*/
+.container-a{
+  margin: 25px;
+}
 /*Ventana Actividad*/
 .ventana {
   width: 700px;
@@ -42,6 +46,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   overflow: hidden;
+  
 }
 
 /* Barra del módulo */
@@ -70,6 +75,7 @@ body {
 
 /* Zona de actividad (área clicable) */
 .zona-actividad {
+  padding-left: 22px;
   height: 450px;
   background: #0096D8;
   border: #333 10px solid;
@@ -109,7 +115,13 @@ body {
 }
 
 .zona-actividad p {
-  font-size: 16px;
+  font-size: 16px;  
   color: #333;
 }
 
+.regresar{
+  margin-bottom: 15px;
+  width: 100%;
+  font-weight: bold;
+  border-color: aliceblue;
+}
