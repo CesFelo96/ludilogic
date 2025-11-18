@@ -1,11 +1,17 @@
-/* Navbar */
 .navbar {
+    position: fixed;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
     background-color: #8ECDF3;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 .nav-links {
@@ -26,19 +32,18 @@
   color: white;
 }
 
-/*Body*/
 body {
   background: url('/img/fondo.png') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
+  padding-top: 90px; 
 }
 
-/*Vista actividad*/
-.container-a{
+.container-a {
   margin: 25px;
 }
-/*Ventana Actividad*/
+
 .ventana {
   width: 700px;
   background-color: white;
@@ -46,10 +51,8 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   overflow: hidden;
-  
 }
 
-/* Barra del módulo */
 .barra-modulo {
   display: flex;
   align-items: center;
@@ -73,53 +76,58 @@ body {
   font-weight: bold;
 }
 
-/* Zona de actividad (área clicable) */
 .zona-actividad {
-  padding-left: 22px;
-  height: 450px;
+  padding: 10px;               
+  height: 420px;               
   background: #0096D8;
-  border: #333 10px solid;
-  margin: 15px;
+  border: #333 6px solid;      
+  margin: 10px;                
   border-radius: 8px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*
-  cursor: pointer;
-  transition: background 0.3s;
-  */
 }
 
- /*
-.zona-actividad:hover {
-  background-color: #c7c7c7;
+.juego {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 8px;                    
+  justify-items: center;
+  align-items: center;
 }
-*/
 
 .juego > div {
   background-color: #eee;
   background-image: url(/img/logo_figura.png);
   background-size: cover;
+
+  width: 85px;
+  height: 85px;
+
   border: #000 1px solid;
-  width: 80px;
-  height: 80px;
-  float: left;
-  margin: 10px;
-  padding: 20px;
+  margin: 0;    
+  padding: 0;   
+
   font-size: 60px;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s;
-  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+
 .zona-actividad p {
-  font-size: 16px;  
+  font-size: 16px;
   color: #333;
 }
 
-.regresar{
+.regresar {
   margin-bottom: 15px;
   width: 100%;
   font-weight: bold;
