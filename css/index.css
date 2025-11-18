@@ -1,16 +1,62 @@
 body {
-      background: url('/img/fondo.png') no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Segoe UI', sans-serif;
-    }
+    background: url('/img/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Caja login */
 .login-box {
-      background-color: rgba(255, 255, 255, 0.95);
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
+    background-color: white;                 /* quitada la transparencia */
+    padding: 2.5rem;
+    border-radius: 12px;
+    width: 360px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.login-box:hover {
+    transform: scale(1.02);                  /* suave efecto hover */
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+/* Logo */
 .logo-circle {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Inputs */
+.form-control {
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #29C4B9;
+    box-shadow: 0 0 6px rgba(41,196,185,0.7);
+}
+
+/* Botón principal */
+.btn-primary {
+    background-color: #29C4B9;
+    border: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1fa79e;
+    transform: translateY(-2px);
+}
+
+/* Enlaces pequeños */
+.link-small a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: 600;
+}
+
+.link-small a:hover {
+    text-decoration: underline;
+}
